@@ -74,9 +74,13 @@ p span.purple {
     text-transform: lowercase;
 }
 .button {
+    position: relative;
+    bottom: 0;
+    left: 0;
     display: block;
     border-radius: .2rem;
-    width: 260px;
+    box-shadow: -4px 4px var(--blue);
+    width: 270px;
     height: 65px;
     padding: .8rem;
     margin: 2rem auto;
@@ -88,8 +92,16 @@ p span.purple {
     line-height: 1;
 }
 .button:hover {
-    color: #fff;
-    background: var(--dark-blue);
+    animation-name: hover;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+@keyframes hover {
+    to {
+        bottom: 5px;
+        left: 5px;
+        box-shadow: -12px 12px var(--blue);
+    }
 }
 .content {
     margin: auto auto 2rem;
@@ -113,7 +125,7 @@ header img {
 }
 nav {
     display: flex;
-    width: 450px;
+    width: 480px;
     margin: auto;
 }
 nav a:nth-child(even):before, nav a:nth-child(even):after {
