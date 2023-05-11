@@ -1,0 +1,252 @@
+@font-face {
+    font-family: JustSans;
+    src: url('fonts/JUSTSansMedium.woff');
+}
+
+:root {
+    --blue: #0752f9;
+    --dark-blue: #0041b9;
+    --teal: #00b3d8;
+}
+body {
+    background: #000;
+    margin: auto;
+    color: #fff;
+    font-family: JustSans;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: JustSans;
+    font-weight: bold;
+}
+span.yellow {
+    background: yellow;
+}
+span.light {
+    padding: 0 2.5rem .2rem .1rem;
+}
+span.white {
+    background: #fff;
+    color: var(--blue);
+}
+span.price {
+    font-weight: 800;
+}
+span.price, span.purple {
+    background: var(--blue);
+}
+span.price, p span.purple {
+    padding: 0 .5rem;
+}
+span.purple.light {
+    font-weight: 600;
+}
+span.teal {
+    color: var(--teal);
+    font-weight: 900;
+}
+h2 {
+    line-height: 1.1em;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+h2 span.yellow {
+    padding: 0 0 .2rem 3rem;
+}
+h2 span.purple {
+    background: var(--teal);
+    padding: .1rem .6rem 0 .4rem;
+}
+h2 span.blue {
+    background: var(--blue);
+}
+h3 {
+    line-height: 1.5rem;
+}
+hr {
+    border: 1px solid var(--teal);
+    height: 95%;
+}
+p span.purple {
+    font-family: JustSans;
+    text-transform: lowercase;
+}
+.button {
+    display: block;
+    border-radius: .2rem;
+    width: 260px;
+    height: 65px;
+    padding: .8rem;
+    margin: 2rem auto;
+    background: #fff;
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.button:hover {
+    color: #fff;
+    background: var(--dark-blue);
+}
+.content {
+    margin: auto auto 2rem;
+    width: 630px;
+    font-size: 1.5rem;
+    line-height: 1.1em;
+}
+.color-dark-blue {
+    color: var(--dark-blue);
+}
+
+header {
+    background: url('images/bg_header.png') no-repeat;
+    display: inline-flex;
+    width: 100%;
+    height: 80px;
+    font-size: 1.2rem;
+}
+header img {
+    margin: auto;
+}
+nav {
+    display: flex;
+    width: 450px;
+    margin: auto;
+}
+nav a:nth-child(even):before, nav a:nth-child(even):after {
+    content: '|';
+    margin: .5rem;
+}
+nav a:last-child {
+    background: var(--dark-blue);
+    padding: .1rem .6rem;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    width: 800px;
+    margin: 4rem auto 2rem;
+}
+.video {
+    background: #000;
+    width: 400px;
+    height: 225px;
+    padding: 2px!important;
+}
+.video-text {
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.video-text p {
+    margin: .4rem 0;
+    text-align: left;
+}
+
+.features {
+    background: var(--dark-blue);
+    clip-path: polygon(0 4%, 100% 0,100% 95%,0 100%);
+    padding: 1rem 0 3rem;
+}
+.features .items {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.how-it-works {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.how-it-works p {
+    text-align: center;
+}
+
+.results {
+    background: url('images/bg_middle.png') no-repeat;
+    background-size: cover;
+    padding: 6rem 0 3rem;
+}
+.results .content {
+    line-height: 1.5rem;
+    font-family: JustSans;
+    text-indent: 1rem;
+    text-align: justify;
+}
+.results p {
+    margin: 2rem 0 .8rem;
+}
+.results span {
+    margin: 1rem;
+    color: var(--teal);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.questions {
+    background: var(--teal);
+    clip-path: polygon(0 23%, 100% 0,100% 100%,0 100%);
+    padding: 3rem 0 1rem;
+    text-align: left;
+}
+.questions .content {
+    font-size: 2rem;
+}
+.questions p {
+    margin: 1.5rem;
+}
+.questions .upper {
+    text-transform: uppercase;
+}
+.questions span {
+    position: relative;
+    left: 10rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0 2rem .2rem 1rem;
+}
+.questions img {
+    margin: 0 1rem;
+}
+
+footer {
+    background: var(--dark-blue);
+    height: 70px;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+footer img {
+    vertical-align: middle;
+    margin-right: 1rem;
+    padding: .8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .intro {
+        grid-template-columns: 1fr;
+        margin: 2rem auto 0;
+    }
+    .video {
+        margin: auto;
+        width: 600px;
+        height: 340px;
+    }
+    .video-text p {
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+    .features .items {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .features .items hr {
+        display: none;
+    }
+}
