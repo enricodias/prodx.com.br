@@ -3,6 +3,9 @@
     src: url('../fonts/JUSTSansMedium.woff');
 }
 
+:root {
+    --black: #2f2f2f;
+}
 html {
     background: url('images/bg.png') no-repeat;
     background-position: right;
@@ -10,7 +13,7 @@ html {
     line-height: 1rem;
     font-family: JustSans;
     font-size: 1.2rem;
-    color: #2f2f2f;
+    color: var(--black);
 }
 body {
     margin: 0;
@@ -60,6 +63,54 @@ footer .unlock {
 }
 .middle span {
     color: #10b7fd;
+}
+.form-box {
+    display: none;
+    background: url('images/bg_form.png') no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.form-container {
+    margin: auto;
+    width: 70vw;
+}
+form {
+    padding: .7rem;
+    text-align: right;
+}
+input {
+    background-color: var(--black);
+    border-radius: 2rem;
+    border: 0;
+    margin: .5rem;
+    padding: .7rem 1rem;
+    width: 100%;
+    font-family: JustSans;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    outline: 0;
+}
+input::placeholder {
+    color: #fff;
+}
+input[type="submit"] {
+    background: url('images/button_form.png') no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    width: 500px;
+    height: 100px;
+    margin-right: -5rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: url('images/button_form_hover.png') no-repeat;
+    background-size: contain;
 }
 @media only screen and (max-width: 1000px) {
     html {

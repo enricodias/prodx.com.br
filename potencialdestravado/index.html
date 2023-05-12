@@ -40,7 +40,27 @@
     <footer>
         <a class="unlock" href=""></a>
     </footer>
+    <div class="form-box">
+        <div class="form-container">
+            <img src="images/logo.png" width="230px">
+            <form action="../obrigado" method="POST">
+                <input type="text" placeholder="Primeiro nome" required="required">
+                <input type="email" placeholder="Email" required="required">
+                <input type="text" placeholder="WhatsApp" required="required">
+                <input type="submit" value="">
+            </form>
+        </div>
+    </div>
 </body>
+<script>
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('.unlock')) return;
+  event.preventDefault();
+  document.querySelector('.form-box').style.display = 'flex';
+  document.querySelector('html').style.overflow = 'hidden';
+
+}, false);
+</script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
