@@ -1,0 +1,26 @@
+@font-face {
+    font-family: JustSans;
+    src: url('../fonts/JUSTSansMedium.woff');
+}
+
+html {
+    display: flex;
+    background: url('images/bg_x.png') no-repeat;
+    background-position: right;
+    background-color: #000;
+    height: 100vh;
+    line-height: 1rem;
+    font-family: JustSans;
+    font-size: 1.5rem;
+    color: #fff;
+}
+body {
+    margin: auto;
+    width: 70vw;
+}
+@media only screen and (max-width: 900px) {
+    html {
+        background-size: cover;
+        background-position: top right -60vw;
+    }
+}
