@@ -1,0 +1,72 @@
+@font-face {
+    font-family: JustSans;
+    src: url('../fonts/JUSTSansMedium.woff');
+}
+
+html {
+    background: url('images/bg.png') no-repeat;
+    background-position: right;
+    background-size: contain;
+    line-height: 1rem;
+    font-family: JustSans;
+    font-size: 1.2rem;
+    color: #2f2f2f;
+}
+body {
+    margin: 0;
+}
+p {
+    margin: 1.4rem auto;
+}
+span {
+    color: #004bff;
+    font-weight: 800;
+}
+header {
+    padding: 2rem 2rem 0;
+}
+header, main {
+    width: calc(100vw - 550px);
+}
+footer {
+    padding: 1.5rem 0 3rem;
+}
+main {
+    padding: 0 2rem 0;
+}
+.unlock {
+    display: block;
+    background: url('images/button_unlock.png') no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 80px;
+}
+.unlock:hover {
+    background: url('images/button_unlock_hover.png') no-repeat;
+    background-size: contain;
+}
+footer .unlock {
+    margin: auto;
+    width: 500px;
+    height: 105px;
+}
+.middle {
+    background: url('images/bg_middle.png') no-repeat;
+    background-size: cover;
+    padding: 1rem 2rem 1.4rem;
+    line-height: 1.4rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.middle span {
+    color: #10b7fd;
+}
+@media only screen and (max-width: 1000px) {
+    html {
+        background-size: cover;
+        background-position: top right -50vw;
+    }
+    header, main {
+        width: 70vw ;
+    }
+}
