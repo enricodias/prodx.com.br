@@ -115,9 +115,9 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 1000px) {
     html {
         background-size: cover;
-        background-position: top right -50vw;
+        background-position: top right -70vw;
     }
     header, main {
-        width: 70vw ;
+        width: 80vw;
     }
 }
