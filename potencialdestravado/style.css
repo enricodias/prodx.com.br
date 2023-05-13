@@ -31,11 +31,21 @@ header {
 header, main {
     width: calc(100vw - 550px);
 }
-footer {
-    padding: 1.5rem 0 3rem;
-}
 main {
     padding: 0 2rem 0;
+}
+footer {
+    background: var(--black);
+    height: 70px;
+    margin: 0 auto 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+footer img {
+    vertical-align: middle;
+    margin-right: 1rem;
+    padding: .8rem;
 }
 .unlock {
     display: block;
@@ -48,7 +58,10 @@ main {
     background: url('images/button_unlock_hover.png') no-repeat;
     background-size: contain;
 }
-footer .unlock {
+.button {
+    padding: 1.5rem 0 3rem;
+}
+.button .unlock {
     margin: auto;
     width: 500px;
     height: 105px;
