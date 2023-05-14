@@ -26,7 +26,9 @@ span {
     font-weight: 800;
 }
 header {
-    padding: 2rem 2rem 0;
+    padding: 2rem 2rem 0rem;
+    line-height: 1.9rem;
+    font-size: 2rem;
 }
 header, main {
     width: calc(100vw - 550px);
